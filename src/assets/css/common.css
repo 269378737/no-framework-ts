@@ -1,0 +1,134 @@
+/* 公共统一样式 */
+
+/* 页 */
+.page-container {
+    position: relative;
+    width: 1200px;
+    height: 1682px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid #F0F5F5;
+    page-break-inside:avoid;
+}
+
+/* 报告内容容器 */
+.content-container{ padding: 0 80px;}
+
+.content-container .content{
+    margin-top: 10px;
+}
+
+
+
+/* 页眉 */
+.page-header{
+    height: 124px;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #5980f9, #19ffff) 1;
+    display: flex;
+    align-items: center;
+}
+.page-header .left, .page-header .right {
+    flex: 1;
+}
+
+.page-header .left {
+    background: url(../img/logo.png) no-repeat;
+    background-size: 31%;
+    background-position: 105px center;
+    height: 100%;
+}
+
+.page-header .right {
+    text-align: right;
+    font-size: 12px;
+    padding-right: 99px;
+}
+
+
+/* 报告内容一级标题--风格1 */
+.page-content-title {
+    height: 70px;
+    line-height: 70px;
+    background: linear-gradient(to right, #91abfb, 30%, #00abff);
+    margin-top: 22px;
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 30px;
+    min-width: 445px;
+    text-align: center;
+}
+
+/* 报告内容一级标题--风格2 */
+.page-content-title-second {
+    font-size: 28px;
+    text-indent: 139px;
+    margin-top: 200px;
+    color: #008BBE;
+    font-weight: bolder;
+}
+
+
+/* 报告内容二级标题 */
+.paragraph-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+.paragraph-title .circle{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    color: #138CC7;
+    border: 1px solid;
+    background-color: #138CC7;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+.paragraph-content{
+    margin: 30px 0 60px 0;
+    text-align: justify;
+    line-height: 2;
+}
+.paragraph-img-content{
+    text-align: center !important;
+}
+.paragraph-content .img {
+    height: 334px;
+    width: 650px; 
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/* 页面底部注释 */
+.note{
+    font-size: 10px;
+    position: absolute;
+    bottom: 100px;
+    left: 80px;
+    font-weight: 500;
+}
+
+/* 内容注释 */
+.content-note {
+    font-size: 10px;
+    margin: 40px auto;
+}
+
+/* 内容容器风格一 */
+.content-container-first{ padding: 40px 80px 0 80px;}
+
+/* 内容容器风格二 */
+.content-container-second {
+    margin: 50px 140px;
+    line-height: 34px;
+    text-align: justify;
+    white-space: normal;
+}
+
+.content-container-second p.title {
+    font-weight: 600;
+    margin: 10px auto;
+}

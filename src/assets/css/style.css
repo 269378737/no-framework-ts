@@ -1,0 +1,81 @@
+/* 浏览器默认样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+}
+i {
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+table {
+  width: 100%;
+  collapse: 0;
+  border-collapse: collapse;
+}
+body, html {
+  width: 100%;
+  height: 1503px;
+  font-family: "Noto Sans SC";
+  color:  #636262;
+  font-size: 18px;
+  font-weight:300;
+  letter-spacing: 3px;
+}
+/* 单样式 */
+.fontbold { font-weight: bold; }
+.margin-top-0{ margin-top: 0; }
+.text-align-center { text-align: center;}
+.text-indent-40 { text-indent: 40px; }
+.text-indent-20 { text-indent: 20px; }
+.clearfix { overflow: hidden; }
+
+.highcharts-point.highcharts-color-1 {
+  transform: translate(-25px, -4px);
+}
+
+.circle-number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 1%;
+  background-color: #138CC7;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  letter-spacing: normal;
+}
+
+
+
+/* 检测结果图表 */
+.risk-container {
+  height: 250px;
+  width: 500px;
+  margin: 0 auto;
+}
+.population-distribution-container {
+  border: 2px solid lightgray;
+  margin-top: 40px;
+  border-radius: 4%;
+  display: flex;
+  align-items: center;
+}
+.population-distribution {
+  width: 500px;
+  margin: 10px 0 10px 20px;
+}
+.popu-distribution-desc{
+  width: 50%;
+  margin-right: 20px;
+}
+.chart-container {
+  display: flex; 
+  margin-top: 80px;
+}
+.chart-container .chart {
+  width: 50%;
+  margin: 0 20px;
+}

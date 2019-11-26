@@ -1,0 +1,25 @@
+<section class="page-container">
+    {{pageHeader}}
+    <div>
+        <div class="page-content-title">特定疾病风险解析报告</div>
+        <div class="content-container-first">
+            <div class=" disease-name">{{diseaseName}}</div>
+
+            <div>
+                <div class="paragraph-title"><i class="circle"></i>两年内疾病发病风险指数和风险等级</div>
+                <div id="{{riskScoreDomId}}" class="risk-container"></div>
+                <div class="paragraph-title"><i class="circle"></i>受检者在大样本人群中的相对位置及患病概率曲线</div>
+                <div class="chart-container">
+                    <div id="{{popDistributionDomId}}" class="chart"></div>
+                    <div id="{{survialCurveDomId}}" class="chart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="note">
+        <p>注释：</p>
+        <p class="text-indent-20">图1 绿色为低风险人群，红色为高风险人群，黑色圆点所示位置为受检者在人群中所处位置。</p>
+        <p class="text-indent-20">图2 绿线为低风险人群，红线为高风险人群。两条线的区分度越高则表示高、低风险人群两年内相关疾病的患病风险相差越大。</p>
+    </div>
+    <div class="bottom-page"></div>
+</section>
