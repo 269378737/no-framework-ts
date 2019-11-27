@@ -8,7 +8,7 @@ import { ChartReport } from "./components/chart-report/chart-report";
 import { IDisease, IChartModel } from "./model/data";
 import { IChartReport } from "./model/component";
 
-interface IRenderConfig {
+export interface IRenderConfig {
     // 组件类名
     component: any;
     // 是否渲染
