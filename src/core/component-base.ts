@@ -1,6 +1,6 @@
 
-import { PageHeader } from "../components/page-header/page-header";
-import { compileTemplate } from "../utils/helper";
+import { PageHeader } from "@/components/page-header/page-header";
+import { compileTemplate } from "@/utils/helper";
 
 export class Component {
     private template: string;

@@ -1,6 +1,6 @@
 
 import * as Highcharts from 'highcharts'
-import { zoomOutHundred, zoomInHundred, cutFn } from './helper';
+import { zoomOutHundred, zoomInHundred, cutFn } from '@/utils/helper';
 
 declare var require: any;
 require('highcharts/modules/boost')(Highcharts);

@@ -1,12 +1,12 @@
-import { diseaseList, IDiseaseConfig } from "./data/disease";
-import { DISEASE, RISK_LEVEL_ARR } from './utils/global'
-import { cutFn } from "./utils/helper";
+import { diseaseList, IDiseaseConfig } from "@/data/disease";
+import { DISEASE, RISK_LEVEL_ARR } from '@/utils/global'
+import { cutFn } from "@/utils/helper";
 
-import hypertensionHighSuggestion from "./docs/risk-suggestion/hypertension-high.html";
+import hypertensionHighSuggestion from "@/docs/risk-suggestion/hypertension-high.html";
 
-import { ChartReport } from "./components/chart-report/chart-report";
-import { IDisease, IChartModel } from "./model/data";
-import { IChartReport } from "./model/component";
+import { ChartReport } from "@/components/chart-report/chart-report";
+import { IDisease, IChartModel } from "@/model/data";
+import { IChartReport } from "@/model/component";
 
 export interface IRenderConfig {
     // 组件类名

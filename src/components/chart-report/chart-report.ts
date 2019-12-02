@@ -1,6 +1,6 @@
 import templateHtml from "./chart-report.html"
-import { Component } from "../../core/component-base";
-import { IChartReport } from "../../model/component";
+import { Component } from "@/core/component-base";
+import { IChartReport } from "@model/component";
 
 export class ChartReport extends Component {
     riskScoreContainerId: string;

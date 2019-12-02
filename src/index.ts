@@ -1,15 +1,15 @@
 
 import $ from 'jquery';
-import Loading from './lib/loading/loading'
+import Loading from '@/lib/loading/loading';
 Loading.open();
 
 
-import './assets/css/common.css'
-import './assets/css/style.css'
-import { HBIDXReport, HighChartsFormatTool } from "./utils/chart";
-import { getRenderConfig, IRenderConfig } from './component.render.config';
-import { CHART_BG_COLORS, RISK_LEVEL_DESC } from './utils/global';
-import { IBaseInformation, IDisease, IPatientDiseaseData } from './model/data';
+import '@/assets/css/common.css'
+import '@/assets/css/style.css'
+import { HBIDXReport, HighChartsFormatTool } from "@/utils/chart";
+import { getRenderConfig, IRenderConfig } from '@/component.render.config';
+import { CHART_BG_COLORS, RISK_LEVEL_DESC } from '@/utils/global';
+import { IBaseInformation, IDisease, IPatientDiseaseData } from '@/model/data';
 
 declare var patientBaseInfo: IBaseInformation[];
 declare var personData: IPatientDiseaseData[];
