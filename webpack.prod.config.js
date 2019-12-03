@@ -30,7 +30,11 @@ module.exports = smp.wrap(merge(common, {
         },
         runtimeChunk: true,
         minimizer: [
-            new TerserPlugin({ sourceMap: true })
+            new TerserPlugin({ 
+                cache: true,
+                parallel: true,
+                sourceMap: true
+            })
         ],
     },
     plugins: [
