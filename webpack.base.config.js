@@ -48,5 +48,15 @@ module.exports = {
             '@model': path.resolve(__dirname, './src/model/')
         }
     },
-    stats: "minimal"
+    stats: {
+        assets: true,
+        builtAt: true,
+        cached: false,
+        cachedAssets: false,
+        chunks: false,
+        chunkModules: false,
+        chunkOrigins: false,
+        entrypoints: false,
+        modules: false,
+    }
 }

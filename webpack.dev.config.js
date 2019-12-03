@@ -61,7 +61,8 @@ module.exports = merge(common, {
     },
     devServer: {
         contentBase: './dist',
-        hot: true
+        hot: true,
+        overlay: true, // 编译出现错误时，将错误直接显示在页面上
     },
     devtool: 'inline-source-map'
 })
