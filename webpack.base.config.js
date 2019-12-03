@@ -48,4 +48,5 @@ module.exports = {
             '@model': path.resolve(__dirname, './src/model/')
         }
     },
+    stats: "minimal"
 }
