@@ -10,7 +10,6 @@ module.exports = {
         filename: './assets/js/[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist')
     },
-
     plugins: [
         // new ProgressBarPlugin({
         //     format: '  build [:bar] ' + chalk.green.bold(':percent') + ' (:elapsed seconds)',
@@ -43,6 +42,10 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: [ '.tsx', '.ts', '.js' ]
+        extensions: [ '.tsx', '.ts', '.js' ],
+        alias: {
+            '@': path.resolve(__dirname, './src/'),
+            '@model': path.resolve(__dirname, './src/model/')
+        }
     },
 }

@@ -1,7 +1,6 @@
 const merge = require('webpack-merge');
 const common = require('./webpack.base.config.js');
 const webpack = require('webpack');
-const path = require('path');
 // 打包可视化分析
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
@@ -16,12 +15,6 @@ module.exports = merge(common, {
     optimization: {
         splitChunks: {
             chunks: 'all'
-        }
-    },
-    resolve: {
-        alias: {
-            '@': path.resolve(__dirname, './src/'),
-            '@model': path.resolve(__dirname, './src/model/')
         }
     },
     plugins: [
