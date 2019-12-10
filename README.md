@@ -20,6 +20,7 @@
 
 ```js
 ├───data                               // mock数据目录
+├───jest                               // jest mock静态文件配置，如css、图片、html文件等等，使其能被jest正确使用
 ├───src                                // 项目主目录
 │   ├───assets                         // 静态资源目录
 │   │   ├───css
@@ -34,7 +35,8 @@
 │   ├───component.render.config.ts     // 组件渲染配置文件
 │   ├───custom.d.ts                    // 模块声明文件
 │   ├───index.html                     // 模板文件
-│   ├───index.ts                       // 项目入口文件
+│   └───index.ts                       // 项目入口文件
+├───test                               // 单元测试 - 存放测试用例目录
 ├───package.json
 ├───README.md
 ├───test.html                          // 临时写小demo用

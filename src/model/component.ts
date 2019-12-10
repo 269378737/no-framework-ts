@@ -1,5 +1,5 @@
 export interface IComponentBase {
-    pageHeader: string;
+    pageHeader?: string;
 }
 export interface IChartReport extends IComponentBase {
     diseaseName: string;

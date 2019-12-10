@@ -1,4 +1,4 @@
-import templateHtml from "./page-header.html";
+import templateHtml from './page-header.html';
 import { compileTemplate } from "@/utils/helper";
 import { IPageHeader } from "@/model/component";
 

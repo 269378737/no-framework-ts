@@ -2,10 +2,18 @@
 import { PageHeader } from "@/components/page-header/page-header";
 import { compileTemplate } from "@/utils/helper";
 
+interface IComponent {
+    pageHeader: string;
+}
+
 export class Component {
-    private template: string;
-    private data: any = {
-        pageHeader: new PageHeader().template
+    protected template: string;
+    private data: IComponent;
+
+    constructor() {
+        this.data = {
+            pageHeader: new PageHeader().template
+        }
     }
 
     compile(templateHtml: string, hasHeader: boolean, data?: any) {
