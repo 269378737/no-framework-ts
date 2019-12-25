@@ -67,3 +67,9 @@ npm install jquery --save
 declare module "jquery"
 ```
 
+
+## 指南
+
+1、在浏览器控制台可查看版本号与构建时间，改代码位于 `index.ts`，其中构建时间是通过在 `webpack` 中使用 `DefinePlugin`来进行全局变量注入。
+
+2、为了在不同的电脑上都有一致的显示效果，该项目使用了自定义字体，自定义字体位于 `src/assets/fonts` 目录下，运用 `CSS3` 的 `@font-face` 进行定义。
