@@ -21,6 +21,9 @@ module.exports = {
             minify: {
                 removeAttributeQuotes: false // 是否移除属性的引号
             }
+        }),
+        new webpack.DefinePlugin({
+            "buildAt": JSON.stringify(new Date().toLocaleString())
         })
     ],
     module: {

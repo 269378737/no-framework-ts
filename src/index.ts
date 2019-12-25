@@ -13,6 +13,7 @@ import { IBaseInformation, IDisease, IPatientDiseaseData } from '@/model/data';
 
 declare var patientBaseInfo: IBaseInformation[];
 declare var personData: IPatientDiseaseData[];
+declare var buildAt: string;
 
 const $body = $(document.body);
 
@@ -129,3 +130,20 @@ render(patientBaseInfo[0], personData[0].model);
 // })
 
 
+
+
+
+const version = require('../package.json').version;
+console.log(`
+################################################################################                                                                  
+ __  __ ____  ____   ___  ____  _____   ____  _____ ____   ___  ____ _____ 
+|  \\/  |  _ \\|  _ \\ / _ \\| __ )| ____| |  _ \\| ____|  _ \\ / _ \\|  _ |_   _|
+| |\\/| | |_) | |_) | | | |  _ \\|  _|   | |_) |  _| | |_) | | | | |_) || |  
+| |  | |  __/|  _ <| |_| | |_) | |___  |  _ <| |___|  __/| |_| |  _ < | |  
+|_|  |_|_|   |_| \\_\\\\___/|____/|_____| |_| \\_|_____|_|    \\___/|_| \\_\\|_|  
+                                                                          
+ReportType: MS
+Version:    v${version}
+BuildAt:    ${buildAt}
+################################################################################
+`)
