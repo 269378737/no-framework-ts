@@ -26,6 +26,7 @@ module.exports = merge(common, {
             jQuery: "jquery" ,
             jsencrypt: 'jsencrypt'
         }),
+        // 注入全局变量
         new webpack.DefinePlugin({
             "model": JSON.stringify(model),
             "patientBaseInfo": JSON.stringify(patientBaseInfo),

@@ -42,18 +42,6 @@ export function stringLengthToPx (arr: string[] = [], cssStyle: ICSSProperty) {
     return Math.max(...tempPxArr);
 }
 
-// 放大100倍
-export function zoomOutHundred (number: number) {
-    number = ((0 <= number && number <= 1) ? number * 100 : number);
-    return parseFloat((number).toFixed(2));
-}
-
-// 缩小100倍
-export function zoomInHundred (number: number): number {
-    number = ((0 <= number && number <= 1) ? number : number / 100);
-    return parseFloat((number).toFixed(2));
-}
-
 // 根据value和cutOff 显示对应的label。比如显示不同风险程度或显示不同颜色
 export function cutFn(value: number, cutoff: number[], labels: string[]) {
     for (let i = 0, len = cutoff.length; i < len; i++) {
@@ -90,4 +78,20 @@ export function dateFormat(date: Date, fmt: string) {
         if(new RegExp("("+ k +")").test(fmt))   
     fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));   
     return fmt;
+}
+
+export function calculateZScore(numbersArr: number[]) {
+    // 计算平均值
+    let total = 0;
+    for(let key in numbersArr) 
+       total += numbersArr[key];
+    const meanVal = total / numbersArr.length;
+  
+    // 计算标准差
+    let SDprep = 0;
+    for(let key in numbersArr) 
+       SDprep += Math.pow((numbersArr[key] - meanVal), 2);
+    const SDresult = Math.sqrt(SDprep / numbersArr.length);
+	
+	return { meanVal, SDresult };
 }

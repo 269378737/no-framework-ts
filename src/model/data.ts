@@ -11,6 +11,11 @@ interface IDensity {
     cutoff: number[]
 }
 
+export interface IHeatMap {
+    name: string;
+    data: number[];
+}
+
 interface IDiseaseModel {
     riskScore: IRiskScoreModel;
     density: IDensity

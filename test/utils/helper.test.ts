@@ -2,8 +2,6 @@
 import {
   padZero,
   domParser,
-  zoomOutHundred,
-  zoomInHundred,
   dateFormat,
   compileTemplate,
   cutFn
@@ -18,16 +16,6 @@ test('padZero() 返回两位数', function() {
 
 test('domParser() 返回doucment对象', function() {
   expect(domParser('<div></div>')).toBeInstanceOf(Document);
-})
-
-test('zoomOutHundred() 将0-1的数字放大100倍，大于 1 的数字原样返回', function() {
-  expect(zoomOutHundred(0.32143)).toBe(32.14);
-  expect(zoomOutHundred(23.4324)).toBe(23.43);
-})
-
-test('zoomInHundred() 将1-100的数字缩小100倍，0-1的数字原样返回', function() {
-  expect(zoomInHundred(34.32)).toBe(0.34);
-  expect(zoomInHundred(0.2326)).toBe(0.23);
 })
 
 test('dateFormat() 将日期对象格式化成指定格式', function() {
