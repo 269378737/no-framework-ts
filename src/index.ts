@@ -130,7 +130,10 @@ render(patientBaseInfo[0], personData[0].model);
 // })
 
 
-
+window.onerror = function(err) {
+    // 全局异常捕捉
+    Loading.close();
+}
 
 
 const version = require('../package.json').version;
