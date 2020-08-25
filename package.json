@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@types/jquery": "^3.3.31",
-    "highcharts": "^7.2.1",
+    "highcharts": "^7.2.2",
     "jquery": "^3.4.1"
   }
 }
